@@ -1,6 +1,6 @@
-
+/*声明头文件，头文件中包含该程序所需要的函数*/
 #include <iostream>
-#include <iomanip>	//声明头文件，头文件中包含该程序所需要的函数
+#include <iomanip>	
 using namespace std;	//Magic. Don't touch.
 
 /*定义函数f(x)为 求x的阶乘x!*/
