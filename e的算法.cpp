@@ -20,9 +20,9 @@ int f(int x)	//int表示定义变量，也可理解为输入。这里输入函数f(x)，并在下方对其进
 
 int main()	//声明主函数，表示程序从此处开始运行
 {
-	cout << "输入：";		//显示 “输入：” cout意为 显示
-	int i = 1, n;		//这里给i赋值是为了初始化变量，赋予i的值可以是任意值
-	double E = 0;     //double表示双精度浮点类型，提高精度  
+	cout << "输入：";	//显示 “输入：” cout意为 显示
+	int i = 1, n;	//这里给i赋值是为了初始化变量，赋予i的值可以是任意值
+	double E = 0;		//double表示双精度浮点类型，提高精度  
 	cin >> n;	//将键盘输入的值赋予n
 	if (n < 0)
 	{
@@ -43,7 +43,7 @@ int main()	//声明主函数，表示程序从此处开始运行
 			E += 1.0 / f (i);	//表示A=A+1/f(i)，1.0是浮点数，可以使结果为小数而非整数
 		}
 		cout << setiosflags(ios::fixed);	//固定小数位数，防止出现 小数末尾为0则不显示 的情况
-		cout << setprecision(51) << "e≈" << E << endl;	//setprecision(51)表示显示51位小数
+		cout << setprecision(51) << "e≈" << E << endl;		//setprecision(51)表示显示51位小数
 		system("pause");		
 		return 0;	
 	}
