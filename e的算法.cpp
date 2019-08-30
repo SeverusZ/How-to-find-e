@@ -3,6 +3,7 @@
 #include <iomanip>	//声明头文件，头文件中包含该程序所需要的函数
 using namespace std;
 
+/*定义函数f(x)为 求x的阶乘x!*/
 int f(int x)	//int表示定义变量，也可理解为输入。这里输入函数f(x)，并在下方对其进行定义
 {
 	int S = 1;
@@ -14,8 +15,8 @@ int f(int x)	//int表示定义变量，也可理解为输入。这里输入函数f(x)，并在下方对其进
 		for (i = 1; i <= x; i++)	// for表示在该条件下循环，i++ 表示i的值连续+1
 			S *= i;		//表示S=S×i
 	}
-	return S;	//返回S的值
-}	//定义函数f(x)为 求x的阶乘x!
+	return S;	//返回S的值，
+}
 
 int main()	//声明主函数，表示程序从此处开始运行
 {
@@ -31,7 +32,7 @@ int main()	//声明主函数，表示程序从此处开始运行
 	}
 	else if (n >= 34)
 	{
-		cout << "您输入的数字过大，请重新输入 :-)" << endl;
+		cout << "您输入的数字太大了 :-)" << endl;
 		system("pause");
 			return 0;
 	}
@@ -39,7 +40,7 @@ int main()	//声明主函数，表示程序从此处开始运行
 	{
 		for (i = 0; i <= n; i++)
 		{
-			E += 1.0 / f (i);	//表示A=A+1/f(i)。1.0是浮点数，可以使结果为小数而非整数
+			E += 1.0 / f (i);	//表示A=A+1/f(i)，1.0是浮点数，可以使结果为小数而非整数
 		}
 		cout << setiosflags(ios::fixed);	//固定小数位数，防止出现 小数末尾为0则不显示 的情况
 		cout << setprecision(51) << "e≈" << E << endl;	//setprecision(51)表示显示51位小数
